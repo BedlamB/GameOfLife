@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="UNDERPOPULATION_VARIABLE"
+                    android:title="Minimum variable"
+                    android:summary="Any live cell with fewer than the minimum number of
+        live neighbours dies, as if caused by under-population"
+                    android:entries="@array/underpopulation_options"
+                    android:entryValues="@array/underpopulation_values"
+                    android:dialogTitle="Minimum variable" android:defaultValue="2" />
+    <ListPreference android:key="MAXIMUM_VARIABLE"
+                    android:title="Maximum variable"
+                    android:summary="Any live cell with more than maximum number of live
+                        neigbors dies, as if caused by over population."
+                    android:entries="@array/overpopulation_options"
+                    android:entryValues="@array/overpopulation_values"
+                    android:dialogTitle="Maximum variable" android:defaultValue="2" />
+    <ListPreference android:key="SPAWN_VARIABLE"
+                    android:title="Spawn variable"
+                    android:summary="Any live cell with exactly this number of live
+                        neigbours spawns."
+                    android:entries="@array/spawn_options"
+                    android:entryValues="@array/spawn_values"
+                    android:dialogTitle="Maximum variable" android:defaultValue="2" />
+    <ListPreference android:key="ANIMATION_VARIABLE"
+                    android:title="Animation_speed"
+                    android:summary="Speed"
+                    android:entries="@array/animation_values"
+                    android:entryValues="@array/animation_values"
+                    android:dialogTitle="Maximum variable" android:defaultValue="2" />
+    <CheckBoxPreference android:key="COLOR_CODING"
+                        android:title="@string/color_coding_title"
+                        android:summary="@string/color_coding_summary"
+                        android:defaultValue="false" />
+
+</PreferenceScreen>
+
